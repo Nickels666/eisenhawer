@@ -1,0 +1,18 @@
+{
+  "tasks": {
+    "user_default": [
+      { "id": 1, "title": "Complete quarterly report", "importance": 9, "urgency": 8, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 2, "title": "Prepare presentation for client", "importance": 8, "urgency": 9, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 3, "title": "Strategic planning session", "importance": 9, "urgency": 4, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 4, "title": "Professional development course", "importance": 8, "urgency": 3, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 5, "title": "Respond to routine emails", "importance": 3, "urgency": 7, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 6, "title": "Weekly team status updates", "importance": 4, "urgency": 6, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 7, "title": "Office supply inventory", "importance": 2, "urgency": 2, "quadrant": "delete", "color": "#757575", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 8, "title": "Social media browsing", "importance": 1, "urgency": 1, "quadrant": "delete", "color": "#757575", "lastModified": "2025-03-11T15:00:00Z" }
+    ]
+  },
+  "metadata": {
+    "lastUpdated": "2025-03-11T15:00:00Z",
+    "version": 1
+  }
+}
