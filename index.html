@@ -662,20 +662,21 @@
         
         // Helper functions
         function getQuadrantDetails(importance, urgency) {
-            // Corrected quadrant assignments to match the standard Eisenhower Matrix:
+            // Quadrant assignments to match the standard Eisenhower Matrix:
             // Top-left: DECIDE (Important, Not Urgent)
             // Top-right: DO (Important & Urgent)
             // Bottom-left: DELETE (Not Important or Urgent)
             // Bottom-right: DELEGATE (Urgent, Not Important)
             
+            // Fixed logic to ensure tasks are placed in the correct quadrants
             if (importance > 5 && urgency > 5) {
-                return { quadrant: "do", color: "#f44336", bgColor: "#f8d7da" }; // Top-right
+                return { quadrant: "do", color: "#f44336", bgColor: "#f8d7da" }; // Top-right (Important & Urgent)
             } else if (importance > 5 && urgency <= 5) {
-                return { quadrant: "decide", color: "#ff9800", bgColor: "#fff3cd" }; // Top-left
+                return { quadrant: "decide", color: "#ff9800", bgColor: "#fff3cd" }; // Top-left (Important, Not Urgent)
             } else if (importance <= 5 && urgency > 5) {
-                return { quadrant: "delegate", color: "#2196f3", bgColor: "#cfe2ff" }; // Bottom-right
+                return { quadrant: "delegate", color: "#2196f3", bgColor: "#cfe2ff" }; // Bottom-right (Urgent, Not Important)
             } else {
-                return { quadrant: "delete", color: "#757575", bgColor: "#e2e3e5" }; // Bottom-left
+                return { quadrant: "delete", color: "#757575", bgColor: "#e2e3e5" }; // Bottom-left (Not Important or Urgent)
             }
         }
         

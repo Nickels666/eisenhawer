@@ -1,15 +1,14 @@
 {
   "tasks": {
     "user_default": [
-      { "id": 1, "title": "Follow up with TAMs on pilot customer usage", "importance": 9, "urgency": 10, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 2, "title": "Work on ecommerce content (approve video)", "importance": 8, "urgency": 10, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 3, "title": "Establish screenshot collection process", "importance": 7, "urgency": 9, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 4, "title": "Send approval for ecommerce landing page", "importance": 9, "urgency": 8, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 5, "title": "Liaise with US marketing/sales for ViaBL launch", "importance": 9, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 6, "title": "Check campaign budget and approval", "importance": 8, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 7, "title": "Create and share campaign plan", "importance": 7, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 8, "title": "Provide available clinic content for ViaBL", "importance": 7, "urgency": 6, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" },
-      { "id": 9, "title": "Get pipettes campaign report", "importance": 6, "urgency": 6, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" }
+      { "id": 1, "title": "Complete quarterly report", "importance": 9, "urgency": 8, "quadrant": "do", "color": "#f44336" },
+      { "id": 2, "title": "Prepare presentation for client", "importance": 9, "urgency": 9, "quadrant": "do", "color": "#f44336" },
+      { "id": 3, "title": "Strategic planning session", "importance": 9, "urgency": 2, "quadrant": "decide", "color": "#ff9800" },
+      { "id": 4, "title": "Professional development course", "importance": 8, "urgency": 3, "quadrant": "decide", "color": "#ff9800" },
+      { "id": 5, "title": "Respond to routine emails", "importance": 3, "urgency": 8, "quadrant": "delegate", "color": "#2196f3" },
+      { "id": 6, "title": "Weekly team status updates", "importance": 2, "urgency": 7, "quadrant": "delegate", "color": "#2196f3" },
+      { "id": 7, "title": "Office supply inventory", "importance": 2, "urgency": 2, "quadrant": "delete", "color": "#757575" },
+      { "id": 8, "title": "Social media browsing", "importance": 1, "urgency": 1, "quadrant": "delete", "color": "#757575" }
     ]
   },
   "metadata": {
