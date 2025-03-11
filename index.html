@@ -706,6 +706,15 @@
             
             // Render each task
             tasks.forEach(task => {
+                // Apply the quadrant rules first to ensure consistent color and quadrant
+                const { quadrant, color } = getQuadrantDetails(task.importance, task.urgency);
+                
+                // Update task's quadrant and color if needed
+                if (task.quadrant !== quadrant || task.color !== color) {
+                    task.quadrant = quadrant;
+                    task.color = color;
+                }
+                
                 // Calculate position for chart view
                 const left = (task.urgency / 10) * 100;
                 const top = ((10 - task.importance) / 10) * 100;
