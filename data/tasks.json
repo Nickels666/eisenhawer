@@ -1,23 +1,23 @@
 {
   "tasks": {
     "user_default": [
-      { "id": 1, "title": "Follow up with TAMs on pilot customer usage", "description": "Project: SFW - Contact TAMs and key account directors about pilot customers' login attempts and issues", "importance": 9, "urgency": 10, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 1, "title": "[SFW] Follow up with TAMs on pilot customer usage", "importance": 9, "urgency": 10, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 2, "title": "Work on ecommerce content (approve video)", "description": "Project: Ecomm - Approve video content for the ecommerce platform", "importance": 8, "urgency": 10, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 2, "title": "[Ecomm] Work on ecommerce content (approve video)", "importance": 8, "urgency": 10, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 3, "title": "Establish screenshot collection process", "description": "Project: SFW - Request customers to provide screenshots of system issues for troubleshooting", "importance": 7, "urgency": 9, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 3, "title": "[SFW] Establish screenshot collection process", "importance": 7, "urgency": 9, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 4, "title": "Send approval for ecommerce landing page", "description": "Project: Ecomm - Approve ecommerce landing page and follow up on video script onboarding guide", "importance": 9, "urgency": 8, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 4, "title": "[Ecomm] Send approval for ecommerce landing page", "importance": 9, "urgency": 8, "quadrant": "do", "color": "#f44336", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 5, "title": "Liaise with US marketing/sales for ViaBL launch", "description": "Project: ViaBL - Coordinate with US teams on content phasing and messaging for product trial", "importance": 9, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 5, "title": "[ViaBL] Liaise with US marketing/sales for launch", "importance": 9, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 6, "title": "Check campaign budget and approval", "description": "Project: Pipettes Campaign - Discuss with Rosa about budget approval for US market launch", "importance": 8, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 6, "title": "[Pipettes] Check campaign budget and approval", "importance": 8, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 7, "title": "Create and share campaign plan", "description": "Project: Pipettes Campaign - Develop Google search and retargeting strategy to share with Rosa", "importance": 7, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 7, "title": "[Pipettes] Create and share campaign plan", "importance": 7, "urgency": 7, "quadrant": "decide", "color": "#ff9800", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 8, "title": "Provide available clinic content for ViaBL", "description": "Project: ViaBL - Review and share available content from Adora and Perth clinics for the launch", "importance": 7, "urgency": 6, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" },
+      { "id": 8, "title": "[ViaBL] Provide available clinic content", "importance": 7, "urgency": 6, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" },
       
-      { "id": 9, "title": "Get pipettes campaign report", "description": "Project: Pipettes Campaign - Contact Ethically to obtain performance report and leads generated", "importance": 6, "urgency": 6, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" }
+      { "id": 9, "title": "[Pipettes] Get campaign performance report", "importance": 6, "urgency": 6, "quadrant": "delegate", "color": "#2196f3", "lastModified": "2025-03-11T15:00:00Z" }
     ]
   },
   "metadata": {
