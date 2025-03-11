@@ -684,12 +684,20 @@
             // Bottom-left: DELETE (Not Important or Urgent)
             // Bottom-right: DELEGATE (Urgent, Not Important)
             
-            // Fixed logic to ensure tasks are placed in the correct quadrants
-            if (importance > 5 && urgency > 5) {
+            // Adjusted thresholds to better distribute tasks across quadrants
+            // DO: High importance (8-10) and high urgency (8-10)
+            // DECIDE: High importance (8-10) and medium/low urgency (1-7)
+            // DELEGATE: Medium/low importance (1-7) and high urgency (8-10)
+            // DELETE: Medium/low importance (1-7) and medium/low urgency (1-7)
+            
+            const highImportanceThreshold = 8;
+            const highUrgencyThreshold = 8;
+            
+            if (importance >= highImportanceThreshold && urgency >= highUrgencyThreshold) {
                 return { quadrant: "do", color: "#f44336", bgColor: "#f8d7da" }; // Top-right (Important & Urgent)
-            } else if (importance > 5 && urgency <= 5) {
+            } else if (importance >= highImportanceThreshold && urgency < highUrgencyThreshold) {
                 return { quadrant: "decide", color: "#ff9800", bgColor: "#fff3cd" }; // Top-left (Important, Not Urgent)
-            } else if (importance <= 5 && urgency > 5) {
+            } else if (importance < highImportanceThreshold && urgency >= highUrgencyThreshold) {
                 return { quadrant: "delegate", color: "#2196f3", bgColor: "#cfe2ff" }; // Bottom-right (Urgent, Not Important)
             } else {
                 return { quadrant: "delete", color: "#757575", bgColor: "#e2e3e5" }; // Bottom-left (Not Important or Urgent)
