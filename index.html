@@ -737,9 +737,30 @@
             // Render each task
             tasks.forEach(task => {
                 
-                // Calculate position for chart view
-                const left = (task.urgency / 10) * 100;
-                const top = ((10 - task.importance) / 10) * 100;
+                // Position tasks based on their quadrant, not just raw values
+                let left, top;
+                
+                if (task.quadrant === "do") {
+                    // DO: Top-right quadrant (75% across, 25% down)
+                    left = 75 + (Math.random() * 15 - 7.5); // Add some random spread
+                    top = 25 + (Math.random() * 15 - 7.5);
+                } else if (task.quadrant === "decide") {
+                    // DECIDE: Top-left quadrant (25% across, 25% down)
+                    left = 25 + (Math.random() * 15 - 7.5);
+                    top = 25 + (Math.random() * 15 - 7.5);
+                } else if (task.quadrant === "delegate") {
+                    // DELEGATE: Bottom-right quadrant (75% across, 75% down)
+                    left = 75 + (Math.random() * 15 - 7.5);
+                    top = 75 + (Math.random() * 15 - 7.5);
+                } else {
+                    // DELETE: Bottom-left quadrant (25% across, 75% down)
+                    left = 25 + (Math.random() * 15 - 7.5);
+                    top = 75 + (Math.random() * 15 - 7.5);
+                }
+                
+                // Ensure positions stay within bounds
+                left = Math.max(5, Math.min(95, left));
+                top = Math.max(5, Math.min(95, top));
                 
                 // Create task point for chart view
                 const taskPoint = document.createElement('div');
@@ -1166,15 +1187,36 @@
                 x = Math.max(0, Math.min(rect.width, x));
                 y = Math.max(0, Math.min(rect.height, y));
                 
-                // Convert to urgency/importance (0-10 scale)
-                const urgency = (x / rect.width) * 10;
-                const importance = 10 - (y / rect.height) * 10;
+                // Determine which quadrant the user is dragging to
+                const quadrantX = x < rect.width / 2 ? 'left' : 'right';
+                const quadrantY = y < rect.height / 2 ? 'top' : 'bottom';
+                
+                // Set importance and urgency based on quadrant
+                let importance, urgency;
+                
+                if (quadrantY === 'top' && quadrantX === 'right') {
+                    // DO: Top-right (Important & Urgent)
+                    importance = Math.floor(Math.random() * 3) + 8; // 8-10
+                    urgency = Math.floor(Math.random() * 3) + 8; // 8-10
+                } else if (quadrantY === 'top' && quadrantX === 'left') {
+                    // DECIDE: Top-left (Important, Not Urgent)
+                    importance = Math.floor(Math.random() * 3) + 8; // 8-10
+                    urgency = Math.floor(Math.random() * 7) + 1; // 1-7
+                } else if (quadrantY === 'bottom' && quadrantX === 'right') {
+                    // DELEGATE: Bottom-right (Urgent, Not Important)
+                    importance = Math.floor(Math.random() * 7) + 1; // 1-7
+                    urgency = Math.floor(Math.random() * 3) + 8; // 8-10
+                } else {
+                    // DELETE: Bottom-left (Not Important or Urgent)
+                    importance = Math.floor(Math.random() * 7) + 1; // 1-7
+                    urgency = Math.floor(Math.random() * 7) + 1; // 1-7
+                }
                 
                 // Update task
                 const updatedTask = {
                     ...task,
-                    importance: Math.max(1, Math.min(10, Math.round(importance))),
-                    urgency: Math.max(1, Math.min(10, Math.round(urgency)))
+                    importance,
+                    urgency
                 };
                 
                 // Always determine quadrant and color based on importance and urgency
